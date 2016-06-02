@@ -1,0 +1,26 @@
+<h1><%= @check_results %></h1>
+<h2><%= @uid_failure_one %></h2>
+<h2><%= @uid_failure_two %></h2>
+<h2><%= @pass_failure_one %></h2>
+<h2><%= @pass_failure_two %></h2>
+
+<form  action="check_password" method="get">
+  <input type="text" id="user_id" name="uid" placeholder="User ID" required/>
+  <br/>
+  <input type="text" id="user_pass" name="pass" placeholder="Password" required/>
+  </br>
+  <input type="submit" value="Submit"/>
+</form>
+
+<section>
+  <span>User ID Requirements</span>
+  <ul>
+    <li>Must be longer than 5 characters</li>
+    <li>Cannot contain '#', '$', or '!'</li>
+  </ul>
+  <span>Password Requirements</span>
+  <ul>
+    <li>Must be longer than 5 characters</li>
+    <li>Must contain '#', '$', or '!'</li>
+  </ul>
+</section>

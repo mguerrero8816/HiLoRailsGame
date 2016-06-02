@@ -1,0 +1,7 @@
+<h1><%= @check_results %></h1>
+<h1>Welcome: <%= @uid %></h1>
+<h2>I'm thinking of a number from 1-100</h2>
+<form action="/game/decide" method="get">
+  <input type="text" name="decision"/>
+  <input type="submit" value="Guess">
+</form>
